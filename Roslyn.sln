@@ -200,6 +200,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.CodeAnalysis.CSha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests", "src\ExpressionEvaluator\CSharp\Test\ResultProvider\Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests.csproj", "{60DB272A-21C9-4E8D-9803-FF4E132392C8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSharp.Compiler.Service.ExpressionCompiler", "src\ExpressionEvaluator\FSharp\Source\ExpressionCompiler\FSharp.Compiler.Service.ExpressionCompiler.csproj", "{F62DAB57-1801-40A3-AFA5-2EC41ACDF649}"
+EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Microsoft.CodeAnalysis.VisualBasic.ExpressionCompiler", "src\ExpressionEvaluator\VisualBasic\Source\ExpressionCompiler\Microsoft.CodeAnalysis.VisualBasic.ExpressionCompiler.vbproj", "{73242A2D-6300-499D-8C15-FADF7ECB185C}"
 EndProject
 Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Microsoft.CodeAnalysis.VisualBasic.ExpressionCompiler.UnitTests", "src\ExpressionEvaluator\VisualBasic\Test\ExpressionCompiler\Microsoft.CodeAnalysis.VisualBasic.ExpressionCompiler.UnitTests.vbproj", "{AC5E3515-482C-4C6A-92D9-D0CEA687DFC2}"
@@ -227,6 +229,10 @@ EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CSharpResultProvider", "src\ExpressionEvaluator\CSharp\Source\ResultProvider\CSharpResultProvider.shproj", "{3140FE61-0856-4367-9AA3-8081B9A80E36}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpResultProvider.NetFX20", "src\ExpressionEvaluator\CSharp\Source\ResultProvider\NetFX20\CSharpResultProvider.NetFX20.csproj", "{BF9DAC1E-3A5E-4DC3-BB44-9A64E0D4E9D3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FSharpResultProvider", "src\ExpressionEvaluator\FSharp\Source\ResultProvider\FSharpResultProvider.shproj", "{34CCA0A0-6F74-4C72-BD9C-31851C9C712A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSharpResultProvider.NetFX20", "src\ExpressionEvaluator\FSharp\Source\ResultProvider\NetFX20\FSharpResultProvider.NetFX20.csproj", "{B6E4A13C-FCEA-44A5-BE9C-A2DE2048D3F4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.CodeAnalysis.CSharp.ResultProvider", "src\ExpressionEvaluator\CSharp\Source\ResultProvider\Portable\Microsoft.CodeAnalysis.CSharp.ResultProvider.csproj", "{BF9DAC1E-3A5E-4DC3-BB44-9A64E0D4E9D4}"
 EndProject
@@ -522,6 +528,7 @@ Global
 		src\Workspaces\SharedUtilitiesAndExtensions\Compiler\Core\CompilerExtensions.projitems*{275812ee-dedb-4232-9439-91c9757d2ae4}*SharedItemsImports = 5
 		src\ExpressionEvaluator\VisualBasic\Source\ResultProvider\BasicResultProvider.projitems*{3140fe61-0856-4367-9aa3-8081b9a80e35}*SharedItemsImports = 13
 		src\ExpressionEvaluator\CSharp\Source\ResultProvider\CSharpResultProvider.projitems*{3140fe61-0856-4367-9aa3-8081b9a80e36}*SharedItemsImports = 13
+		src\ExpressionEvaluator\FSharp\Source\ResultProvider\FSharpResultProvider.projitems*{3140fe61-0856-4367-9aa3-8081b9a80e36}*SharedItemsImports = 13
 		src\Analyzers\CSharp\Analyzers\CSharpAnalyzers.projitems*{3973b09a-4fbf-44a5-8359-3d22ceb71f71}*SharedItemsImports = 5
 		src\Analyzers\CSharp\CodeFixes\CSharpCodeFixes.projitems*{3973b09a-4fbf-44a5-8359-3d22ceb71f71}*SharedItemsImports = 5
 		src\Compilers\CSharp\CSharpAnalyzerDriver\CSharpAnalyzerDriver.projitems*{3973b09a-4fbf-44a5-8359-3d22ceb71f71}*SharedItemsImports = 5
@@ -539,6 +546,7 @@ Global
 		src\Analyzers\Core\CodeFixes\CodeFixes.projitems*{5ff1e493-69cc-4d0b-83f2-039f469a04e1}*SharedItemsImports = 5
 		src\Workspaces\SharedUtilitiesAndExtensions\Workspace\Core\WorkspaceExtensions.projitems*{5ff1e493-69cc-4d0b-83f2-039f469a04e1}*SharedItemsImports = 5
 		src\ExpressionEvaluator\CSharp\Source\ResultProvider\CSharpResultProvider.projitems*{60db272a-21c9-4e8d-9803-ff4e132392c8}*SharedItemsImports = 5
+		src\ExpressionEvaluator\FSharp\Source\ResultProvider\CSharpResultProvider.projitems*{60db272a-21c9-4e8d-9803-ff4e132392c8}*SharedItemsImports = 5
 		src\Workspaces\SharedUtilitiesAndExtensions\Compiler\CSharp\CSharpCompilerExtensions.projitems*{699fea05-aea7-403d-827e-53cf4e826955}*SharedItemsImports = 13
 		src\ExpressionEvaluator\VisualBasic\Source\ResultProvider\BasicResultProvider.projitems*{76242a2d-2600-49dd-8c15-fea07ecb1842}*SharedItemsImports = 5
 		src\ExpressionEvaluator\VisualBasic\Source\ResultProvider\BasicResultProvider.projitems*{76242a2d-2600-49dd-8c15-fea07ecb1843}*SharedItemsImports = 5
@@ -872,6 +880,10 @@ Global
 		{FD6BA96C-7905-4876-8BCC-E38E2CA64F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD6BA96C-7905-4876-8BCC-E38E2CA64F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD6BA96C-7905-4876-8BCC-E38E2CA64F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62DAB57-1801-40A3-AFA5-2EC41ACDF649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62DAB57-1801-40A3-AFA5-2EC41ACDF649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62DAB57-1801-40A3-AFA5-2EC41ACDF649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62DAB57-1801-40A3-AFA5-2EC41ACDF649}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE297965-4D56-4BA9-85EB-655AC4FC95A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE297965-4D56-4BA9-85EB-655AC4FC95A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE297965-4D56-4BA9-85EB-655AC4FC95A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -1388,6 +1400,7 @@ Global
 		{A486D7DE-F614-409D-BB41-0FFDF582E35C} = {8DBA5174-B0AA-4561-82B1-A46607697753}
 		{B617717C-7881-4F01-AB6D-B1B6CC0483A0} = {4C81EBB2-82E1-4C81-80C4-84CC40FA281B}
 		{FD6BA96C-7905-4876-8BCC-E38E2CA64F31} = {913A4C08-898E-49C7-9692-0EF9DC56CF6E}
+		{F62DAB57-1801-40A3-AFA5-2EC41ACDF649} = {913A4C08-898E-49C7-9692-0EF9DC56CF6E}
 		{AE297965-4D56-4BA9-85EB-655AC4FC95A0} = {913A4C08-898E-49C7-9692-0EF9DC56CF6E}
 		{60DB272A-21C9-4E8D-9803-FF4E132392C8} = {913A4C08-898E-49C7-9692-0EF9DC56CF6E}
 		{73242A2D-6300-499D-8C15-FADF7ECB185C} = {151F6994-AEB3-4B12-B746-2ACFF26C7BBB}

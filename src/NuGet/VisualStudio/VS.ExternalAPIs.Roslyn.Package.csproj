@@ -55,12 +55,15 @@
     <ProjectReference Include="..\..\VisualStudio\Xaml\Impl\Microsoft.VisualStudio.LanguageServices.Xaml.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\Core\Source\ExpressionCompiler\Microsoft.CodeAnalysis.ExpressionCompiler.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\CSharp\Source\ExpressionCompiler\Microsoft.CodeAnalysis.CSharp.ExpressionCompiler.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\..\ExpressionEvaluator\FSharp\Source\ExpressionCompiler\FSharp.Compiler.Service.ExpressionCompiler.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\VisualBasic\Source\ExpressionCompiler\Microsoft.CodeAnalysis.VisualBasic.ExpressionCompiler.vbproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\Core\Source\FunctionResolver\Microsoft.CodeAnalysis.FunctionResolver.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\Core\Source\ResultProvider\Portable\Microsoft.CodeAnalysis.ResultProvider.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\Core\Source\ResultProvider\NetFX20\ResultProvider.NetFX20.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\CSharp\Source\ResultProvider\Portable\Microsoft.CodeAnalysis.CSharp.ResultProvider.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\CSharp\Source\ResultProvider\NetFX20\CSharpResultProvider.NetFX20.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\..\ExpressionEvaluator\FSharp\Source\ResultProvider\Portable\FSharp.Compiler.Service.ResultProvider.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\..\ExpressionEvaluator\FSharp\Source\ResultProvider\NetFX20\FSharpResultProvider.NetFX20.csproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\VisualBasic\Source\ResultProvider\Portable\Microsoft.CodeAnalysis.VisualBasic.ResultProvider.vbproj" PrivateAssets="all" />
     <ProjectReference Include="..\..\ExpressionEvaluator\VisualBasic\Source\ResultProvider\NetFX20\BasicResultProvider.NetFX20.vbproj" PrivateAssets="all" />
   </ItemGroup>
@@ -102,19 +105,24 @@
 
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.ResultProvider\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.ExpressionEvaluator.ResultProvider.dll" TargetDir="" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.CSharp.ResultProvider\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ResultProvider.dll" TargetDir="" />
+      <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.FSharp.ResultProvider\$(Configuration)\netstandard2.0\FSharp.Compiler.Service.ExpressionEvaluator.ResultProvider.dll" TargetDir="" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.VisualBasic.ResultProvider\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.VisualBasic.ExpressionEvaluator.ResultProvider.dll" TargetDir="" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.FunctionResolver\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.ExpressionEvaluator.FunctionResolver.dll" TargetDir="" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.VisualBasic.ExpressionCompiler\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.VisualBasic.ExpressionEvaluator.ExpressionCompiler.dll" TargetDir="" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.CSharp.ExpressionCompiler\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ExpressionCompiler.dll" TargetDir="" />
+      <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.FSharp.ExpressionCompiler\$(Configuration)\netstandard2.0\FSharp.Compiler.Service.ExpressionEvaluator.ExpressionCompiler.dll" TargetDir="" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.ExpressionCompiler\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.ExpressionEvaluator.ExpressionCompiler.dll" TargetDir="" />
 
       <_File Include="$(ArtifactsBinDir)BasicResultProvider.NetFX20\$(Configuration)\net20\Microsoft.CodeAnalysis.VisualBasic.ExpressionEvaluator.ResultProvider.dll" TargetDir="RemoteDebugger\net20" />
       <_File Include="$(ArtifactsBinDir)CSharpResultProvider.NetFX20\$(Configuration)\net20\Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ResultProvider.dll" TargetDir="RemoteDebugger\net20" />
+      <_File Include="$(ArtifactsBinDir)FSharpResultProvider.NetFX20\$(Configuration)\net20\FSharp.Compiler.Service.ExpressionEvaluator.ResultProvider.dll" TargetDir="RemoteDebugger\net20" />
       <_File Include="$(ArtifactsBinDir)ResultProvider.NetFX20\$(Configuration)\net20\Microsoft.CodeAnalysis.ExpressionEvaluator.ResultProvider.dll" TargetDir="RemoteDebugger\net20" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.FunctionResolver\$(Configuration)\net45\Microsoft.CodeAnalysis.ExpressionEvaluator.FunctionResolver.dll" TargetDir="RemoteDebugger\net45" />
 
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.CSharp.ResultProvider\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ResultProvider.vsdconfig" TargetDir="LanguageServiceRegistration\ExpressionEvaluatorPackage" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.CSharp.ExpressionCompiler\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ExpressionCompiler.vsdconfig" TargetDir="LanguageServiceRegistration\ExpressionEvaluatorPackage" />
+      <_File Include="$(ArtifactsBinDir)FSharp.Compiler.Service.ResultProvider\$(Configuration)\netstandard2.0\FSharp.Compiler.Service.ExpressionEvaluator.ResultProvider.vsdconfig" TargetDir="LanguageServiceRegistration\ExpressionEvaluatorPackage" />
+      <_File Include="$(ArtifactsBinDir)FSharp.Compiler.Service.ExpressionCompiler\$(Configuration)\netstandard2.0\FSharp.Compiler.Service.ExpressionEvaluator.ExpressionCompiler.vsdconfig" TargetDir="LanguageServiceRegistration\ExpressionEvaluatorPackage" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.VisualBasic.ResultProvider\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.VisualBasic.ExpressionEvaluator.ResultProvider.vsdconfig" TargetDir="LanguageServiceRegistration\ExpressionEvaluatorPackage" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.FunctionResolver\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.ExpressionEvaluator.FunctionResolver.vsdconfig" TargetDir="LanguageServiceRegistration\ExpressionEvaluatorPackage" />
       <_File Include="$(ArtifactsBinDir)Microsoft.CodeAnalysis.VisualBasic.ExpressionCompiler\$(Configuration)\netstandard2.0\Microsoft.CodeAnalysis.VisualBasic.ExpressionEvaluator.ExpressionCompiler.vsdconfig" TargetDir="LanguageServiceRegistration\ExpressionEvaluatorPackage" />
